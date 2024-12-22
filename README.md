@@ -1,54 +1,88 @@
-<header>
-
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
-
-# GitHub Pages
-
-_Create a site or blog from your GitHub repositories with GitHub Pages._
-
-</header>
-
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
-
-## Step 1: Enable GitHub Pages
-
-_Welcome to GitHub Pages and Jekyll :tada:!_
-
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
-
-### :keyboard: Activity: Enable GitHub Pages
-
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages** in the **Code and automation** section.
-1. Ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu.
-1. Click the **Save** button.
-1. Wait about _one minute_ then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
-   > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบสอบถาม</title>
+</head>
+<body>
+    <hr>
+    <h3 style="text-align: center;">แบบสอบถาม</h3>
+    <hr>
+    <form>
+        <table align="center" bgcolor="#f1e6cd" cellpadding="10" cellspacing="0">
+            <tr>
+                <td colspan="2" style="text-align: left; font-weight: bold;">ข้อมูลผู้ตอบแบบสอบถาม</td>
+            </tr>
+            <tr>
+                <td><b>ชื่อ-นามสกุล:</b></td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td><b>รหัสนักศึกษา:</b></td>
+                <td><input type="text" name="student_id" required></td>
+            </tr>
+            <tr>
+                <td><b>เพศ:</b></td>
+                <td>
+                    <input type="radio" name="gender" value="male" checked> ชาย
+                    <input type="radio" name="gender" value="female"> หญิง
+                </td>
+            </tr>
+            <tr>
+                <td><b>สังกัดคณะ:</b></td>
+                <td>
+                    <select name="faculty">
+                        <option value="science">คณะวิทยาศาสตร์</option>
+                        <option value="computer">คณะวิทยาการคอมพิวเตอร์</option>
+                        <option value="education">คณะครุศาสตร์</option>
+                        <option value="business">คณะบริหารธุรกิจและการจัดการ</option>
+                        <option value="humanities">คณะมนุษยศาสตร์และสังคมศาสตร์</option>
+                        <option value="industrial">คณะเทคโนโลยีอุตสาหกรรม</option>
+                        <option value="agriculture">คณะเกษตรศาสตร์</option>
+                        <option value="nursing">คณะพยาบาลศาสตร์</option>
+                        <option value="publichealth">คณะสาธารณสุขศาสตร์</option>
+                        <option value="medicine">คณะแพทย์แผนไทยและแพทย์ทางเลือก</option>
+                        <option value="law">คณะนิติศาสตร์</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b>แม่สีที่ชื่นชอบ:</b></td>
+                <td>
+                    <input type="checkbox" name="color" value="red"> สีแดง
+                    <input type="checkbox" name="color" value="green"> สีเขียว
+                    <input type="checkbox" name="color" value="blue"> สีน้ำเงิน
+                </td>
+            </tr>
+            <tr>
+                <td><b>ผลไม้ที่ชื่นชอบ:</b></td>
+                <td>
+                    <input type="checkbox" name="fruit" value="mango"> มะม่วง
+                    <input type="checkbox" name="fruit" value="custardapple"> น้อยหน่า
+                    <input type="checkbox" name="fruit" value="durian"> ทุเรียน<br>
+                    <input type="checkbox" name="fruit" value="longan"> ลำใย
+                    <input type="checkbox" name="fruit" value="guava"> ฝรั่ง
+                    <input type="checkbox" name="fruit" value="watermelon"> แตงโม
+                </td>
+            </tr>
+            <tr>
+                <td><b>อาหารที่ชื่นชอบ:</b></td>
+                <td>
+                    <input type="checkbox" name="food" value="tomyum"> ต้มยำกุ้ง
+                    <input type="checkbox" name="food" value="omelette"> ไข่เจียวหมูสับ
+                    <input type="checkbox" name="food" value="kaengkhaikai"> แกงข่าไก่<br>
+                    <input type="checkbox" name="food" value="green-curry"> แกงเขียวหวานไก่
+                    <input type="checkbox" name="food" value="padthai"> ผัดไทย
+                    <input type="checkbox" name="food" value="noodles"> ราดหน้าหมี่กรอบ
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="บันทึก">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
